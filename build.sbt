@@ -7,4 +7,5 @@ lazy val root = (project in file("."))
     name := "kafka-producer"
   )
 libraryDependencies += "org.apache.kafka" % "kafka-clients" % "3.1.0"
-libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.11" % Runtime
+libraryDependencies += "org.slf4j" % "slf4j-api" % "1.7.36"
+libraryDependencies += "org.slf4j" % "slf4j-reload4j" % "1.7.36"
